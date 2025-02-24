@@ -1,4 +1,4 @@
-import githubToken from "apikey.js"
+import githubToken from "./apikey.js"
 
 var hashMap = new Map();
 
