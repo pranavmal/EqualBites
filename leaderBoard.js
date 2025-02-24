@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 var hashMap = new Map();
 
 // Replace this with your Gist URL
