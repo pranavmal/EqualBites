@@ -1,5 +1,3 @@
-import githubToken from "./apikey.js";
-
 var hashMap = new Map();
 
 // Replace this with your Gist URL
