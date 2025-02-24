@@ -157,9 +157,5 @@ function handleFormSubmit(event) {
         });
 }
 
-function setPaymentMethod(method) {
-    document.getElementById('selected-payment').innerText = `Selected payment method: ${method}`;
-}
-
 const form = document.getElementById("update-form");
 form.addEventListener("submit", handleFormSubmit);
