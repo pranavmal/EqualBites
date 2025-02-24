@@ -1,3 +1,5 @@
+import githubToken from "./apikey.js";
+
 var hashMap = new Map();
 
 // Replace this with your Gist URL
@@ -117,7 +119,7 @@ function handleFormSubmit(event) {
         .join(' ');
 
     console.log(mapString);
-  
+
     const gistId = 'cdf2a6dde791e2d471306e2e62faf075';
 
     // New content to replace the existing Gist content
@@ -125,12 +127,13 @@ function handleFormSubmit(event) {
 
     // URL for the Gist API
     const gistUrl = `https://api.github.com/gists/${gistId}`;
+    const githubToken = process.env.API_KEY;
 
     // Fetch options
     const options = {
         method: 'PATCH',
         headers: {
-            'Authorization': `token ${{secrets.API_KEY}}`,
+            'Authorization': `token ${githubToken}`,
             'Accept': 'application/vnd.github.v3+json',
             'Content-Type': 'application/json'
         },
