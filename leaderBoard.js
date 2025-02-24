@@ -127,7 +127,7 @@ function handleFormSubmit(event) {
 
     // URL for the Gist API
     const gistUrl = `https://api.github.com/gists/${gistId}`;
-    const githubToken = process.env.API_KEY;
+    // const githubToken = process.env.API_KEY;
 
     // Fetch options
     const options = {
