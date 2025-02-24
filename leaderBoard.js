@@ -1,4 +1,4 @@
-require('dotenv').config();
+import githubToken from "apikey.js"
 
 var hashMap = new Map();
 
